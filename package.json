@@ -1,0 +1,14 @@
+{
+  "name": "blockchain-assignment-1",
+  "version": "0.0.0",
+  "description": "blockchain assignment 1",
+  "main": "server.js",
+  "author": {
+    "name": ""
+  },
+  "devDependencies": {
+    "eslint": "^8.21.0"
+  },
+  "eslintConfig": {
+  }
+}
