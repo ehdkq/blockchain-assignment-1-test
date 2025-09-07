@@ -17,7 +17,7 @@ class Block {
         this.hash = this.calculateHash();
     }
 
-    /** Compute SHA-256 over the block’s contents */
+    /** Compute SHA-256 over the blockâ€™s contents */
     calculateHash() {
         return crypto
             .createHash('sha256')
@@ -80,9 +80,9 @@ class Blockchain {
         for (let i = 1; i < this.chain.length; i++) {
             const current = this.chain[i];
             const previous = this.chain[i - 1];
-            // recompute hash from the block’s current contents
+            // recompute hash from the blockâ€™s current contents
             if (current.hash !== current.calculateHash()) return false;
-            // ensure link matches previous block’s actual hash
+            // ensure link matches previous blockâ€™s actual hash
             if (current.previousHash !== previous.hash) return false;
         }
         return true;
